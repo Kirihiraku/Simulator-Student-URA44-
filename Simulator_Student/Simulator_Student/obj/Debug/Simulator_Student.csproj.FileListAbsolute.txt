@@ -1,0 +1,9 @@
+N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Работа по темам\Новая папка\Simulator_Student\Simulator_Student\bin\Debug\Simulator_Student.exe.config
+N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Работа по темам\Новая папка\Simulator_Student\Simulator_Student\bin\Debug\Simulator_Student.exe
+N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Работа по темам\Новая папка\Simulator_Student\Simulator_Student\bin\Debug\Simulator_Student.pdb
+N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Работа по темам\Новая папка\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.csproj.AssemblyReference.cache
+N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Работа по темам\Новая папка\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.Properties.Resources.resources
+N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Работа по темам\Новая папка\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.csproj.GenerateResource.cache
+N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Работа по темам\Новая папка\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.csproj.CoreCompileInputs.cache
+N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Работа по темам\Новая папка\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.exe
+N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Работа по темам\Новая папка\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.pdb
