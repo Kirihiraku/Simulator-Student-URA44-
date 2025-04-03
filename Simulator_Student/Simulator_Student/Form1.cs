@@ -5,8 +5,8 @@ namespace Project_2
 {
     public partial class Form1 : Form
     {
-        private int energy = 100;
-        private int hunger = 0;
+        private int energy = 50;
+        private int hunger = 10;
         private int happiness = 50;
         private int knowledge = 20;
         private decimal money = 100;
@@ -22,40 +22,63 @@ namespace Project_2
 
         private void UpdateUI()
         {
-            progressBarEnergy.Value = energy;
-            progressBarHunger.Value = hunger;
-            progressBarHappiness.Value = happiness;
-            progressBarKnowledge.Value = knowledge;
-            textBoxMoney.Text = money.ToString();
-            textBoxSchedule.Text = schedule;
-            textBoxNotifications.Text = notifications;
-            textBoxCourse.Text = course.ToString();
-
-            // Ensure progress bar values are within valid range
+            // Обновляем параметры, чтобы гарантировать, что они находятся в допустимом диапазоне
             energy = Math.Max(0, Math.Min(100, energy));
             hunger = Math.Max(0, Math.Min(100, hunger));
             happiness = Math.Max(0, Math.Min(100, happiness));
             knowledge = Math.Max(0, Math.Min(100, knowledge));
 
+            // Обновляем прогресс бары
+            progressBarEnergy.Value = energy;
+            progressBarHunger.Value = hunger;
+            progressBarHappiness.Value = happiness;
+            progressBarKnowledge.Value = knowledge;
+
+            // Обновляем текстовые поля
+            textBoxMoney.Text = money.ToString();
+            textBoxSchedule.Text = schedule;
+            textBoxNotifications.Text = notifications;
+            textBoxCourse.Text = course.ToString();
+
             // Проверка на смерть с разными сообщениями
-            if (energy == 0)
+            if (energy <= 0)
             {
                 MessageBox.Show("Вы умерли от истощения!");
                 DisableButtons();
             }
-            else if (hunger == 100)
+            else if (hunger >= 100)
             {
                 MessageBox.Show("Вы умерли от голода!");
                 DisableButtons();
             }
-            else if (happiness == 100)
+            else if (happiness >= 100)
             {
                 MessageBox.Show("Вы умерли от передозировки счастья!");
                 DisableButtons();
             }
-            else if (knowledge == 0)
+            else if (knowledge <= 0)
             {
                 MessageBox.Show("Вы умерли от недостатка знаний!");
+                DisableButtons();
+            }
+            else if (knowledge >= 100)
+            {
+                MessageBox.Show("Вы умерли от достатка знаний!");
+                DisableButtons();
+            }
+            else if (energy >= 100)
+            {
+                MessageBox.Show("Вы умерли от переизбытка энергии!");
+                DisableButtons();
+            }
+            else if (happiness == 100)
+            {
+                MessageBox.Show("Вы умерли от депрессии!");
+                DisableButtons();
+            }
+            else if (hunger <= 0)
+            {
+                MessageBox.Show("Вы умерли от своего веса!");
                 DisableButtons();
             }
         }
@@ -113,8 +136,8 @@ namespace Project_2
         private void buttonRestart_Click(object sender, EventArgs e)
         {
             // Сброс значений
-            energy = 100;
-            hunger = 0;
+            energy = 50;
+            hunger = 10;
             happiness = 50;
             knowledge = 20;
             money = 100;
