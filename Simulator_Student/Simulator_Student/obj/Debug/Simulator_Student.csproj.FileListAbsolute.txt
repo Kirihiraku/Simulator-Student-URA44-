@@ -7,3 +7,13 @@ N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Р
 N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Работа по темам\Новая папка\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.csproj.CoreCompileInputs.cache
 N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Работа по темам\Новая папка\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.exe
 N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Шевчук\Работа по темам\Новая папка\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.pdb
+C:\Users\Kirih\Downloads\Simulator-Student-URA44--main\Simulator_Student\Simulator_Student\bin\Debug\Simulator_Student.exe.config
+C:\Users\Kirih\Downloads\Simulator-Student-URA44--main\Simulator_Student\Simulator_Student\bin\Debug\Simulator_Student.exe
+C:\Users\Kirih\Downloads\Simulator-Student-URA44--main\Simulator_Student\Simulator_Student\bin\Debug\Simulator_Student.pdb
+C:\Users\Kirih\Downloads\Simulator-Student-URA44--main\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.csproj.AssemblyReference.cache
+C:\Users\Kirih\Downloads\Simulator-Student-URA44--main\Simulator_Student\Simulator_Student\obj\Debug\Project_2.Form1.resources
+C:\Users\Kirih\Downloads\Simulator-Student-URA44--main\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.Properties.Resources.resources
+C:\Users\Kirih\Downloads\Simulator-Student-URA44--main\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.csproj.GenerateResource.cache
+C:\Users\Kirih\Downloads\Simulator-Student-URA44--main\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.csproj.CoreCompileInputs.cache
+C:\Users\Kirih\Downloads\Simulator-Student-URA44--main\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.exe
+C:\Users\Kirih\Downloads\Simulator-Student-URA44--main\Simulator_Student\Simulator_Student\obj\Debug\Simulator_Student.pdb

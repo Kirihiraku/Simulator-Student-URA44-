@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project_2
@@ -43,6 +36,37 @@ namespace Project_2
             hunger = Math.Max(0, Math.Min(100, hunger));
             happiness = Math.Max(0, Math.Min(100, happiness));
             knowledge = Math.Max(0, Math.Min(100, knowledge));
+
+            // Проверка на смерть с разными сообщениями
+            if (energy == 0)
+            {
+                MessageBox.Show("Вы умерли от истощения!");
+                DisableButtons();
+            }
+            else if (hunger == 100)
+            {
+                MessageBox.Show("Вы умерли от голода!");
+                DisableButtons();
+            }
+            else if (happiness == 100)
+            {
+                MessageBox.Show("Вы умерли от передозировки счастья!");
+                DisableButtons();
+            }
+            else if (knowledge == 0)
+            {
+                MessageBox.Show("Вы умерли от недостатка знаний!");
+                DisableButtons();
+            }
+        }
+
+        private void DisableButtons()
+        {
+            buttonStudy.Enabled = false;
+            buttonRelax.Enabled = false;
+            buttonEat.Enabled = false;
+            buttonWork.Enabled = false;
+            buttonRestart.Enabled = true; // Включаем кнопку перезапуска
         }
 
         private void buttonStudy_Click(object sender, EventArgs e)
@@ -50,8 +74,8 @@ namespace Project_2
             // Логика для "Учиться"
             knowledge += 10;
             energy -= 10;
-            hunger += 5;
-            happiness -= 15;
+            hunger += 15;
+            happiness -= 10;
             UpdateUI();
             MessageBox.Show("Вы учились!");
         }
@@ -63,16 +87,16 @@ namespace Project_2
             happiness += 25;
             hunger += 10;
             UpdateUI();
-            MessageBox.Show("Вы были взломаны Саней!");
+            MessageBox.Show("Вы отдохнули!");
         }
 
         private void buttonEat_Click(object sender, EventArgs e)
         {
             // Логика для "Поесть"
-            hunger -= 30;
-            money -= 10; // Предположим, что еда стоит денег
+            hunger -= 20;
+            money -= 50; // Предположим, что еда стоит денег
             UpdateUI();
-            MessageBox.Show("Вы были взломаны негром Арсеном!");
+            MessageBox.Show("Вы поели!");
         }
 
         private void buttonWork_Click(object sender, EventArgs e)
@@ -80,9 +104,32 @@ namespace Project_2
             // Логика для "Работать"
             money += 50;
             energy -= 10;
-            happiness -= 5;
+            happiness -= 10;
+            hunger += 25;
             UpdateUI();
             MessageBox.Show("Вы поработали!");
+        }
+
+        private void buttonRestart_Click(object sender, EventArgs e)
+        {
+            // Сброс значений
+            energy = 100;
+            hunger = 0;
+            happiness = 50;
+            knowledge = 20;
+            money = 100;
+            schedule = "Понедельник: Лекции по математике\nВторник: Лабораторная работа по физике";
+            notifications = "Внимание: Скоро экзамен по программированию!";
+            course = 3;
+
+            UpdateUI();
+
+            // Включаем все кнопки снова
+            buttonStudy.Enabled = true;
+            buttonRelax.Enabled = true;
+            buttonEat.Enabled = true;
+            buttonWork.Enabled = true;
+            buttonRestart.Enabled = false; // Отключаем кнопку перезапуска
         }
     }
 }

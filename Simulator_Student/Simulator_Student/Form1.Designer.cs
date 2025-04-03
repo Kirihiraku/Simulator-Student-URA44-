@@ -50,6 +50,7 @@ namespace Project_2
             this.buttonEat = new System.Windows.Forms.Button();
             this.buttonWork = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonRestart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -229,18 +230,29 @@ namespace Project_2
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Simulator_Student.Properties.Resources.BgB5t3DQLzy_XMkZ2_uIXYC9wPTJM9iq;
+            this.pictureBox1.Image = global::Simulator_Student.Properties.Resources.BgB5t3DQLzy_XMkZ2_uIXYC9wPTJM9iq1;
             this.pictureBox1.Location = new System.Drawing.Point(266, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(300, 300);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
+            // buttonRestart
+            // 
+            this.buttonRestart.Location = new System.Drawing.Point(585, 185);
+            this.buttonRestart.Name = "buttonRestart";
+            this.buttonRestart.Size = new System.Drawing.Size(92, 23);
+            this.buttonRestart.TabIndex = 24;
+            this.buttonRestart.Text = "Перезапуск";
+            this.buttonRestart.UseVisualStyleBackColor = true;
+            this.buttonRestart.Click += new System.EventHandler(this.buttonRestart_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonRestart);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonWork);
             this.Controls.Add(this.buttonEat);
@@ -293,6 +305,7 @@ namespace Project_2
         private System.Windows.Forms.Button buttonEat;
         private System.Windows.Forms.Button buttonWork;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button buttonRestart;
     }
 }
 
